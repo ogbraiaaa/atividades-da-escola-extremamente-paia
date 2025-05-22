@@ -4,7 +4,7 @@ fun ehTriangular(num: Int): Boolean {
     }
     var n = 1
     while (true) {
-        val produto = n * (n + 1) * (n + 2)
+        var produto = n * (n + 1) * (n + 2)
         if (produto == num) {
             return true
         }
@@ -16,7 +16,7 @@ fun ehTriangular(num: Int): Boolean {
 }
 
 fun main() {
-    val entrada = readlnOrNull()?.toIntOrNull()
+    var entrada = readlnOrNull()?.toIntOrNull()
     if (entrada != null) {
         if (ehTriangular(entrada)) {
             println("$entrada é triangular :)")
