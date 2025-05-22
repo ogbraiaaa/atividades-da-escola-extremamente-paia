@@ -1,8 +1,8 @@
 fun main() {
     println("Digite uma string:")
-    val texto = readlnOrNull() ?: ""
+    var texto = readlnOrNull() ?: ""
     var contador = 0
-    val vogais = "aeiouAEIOU"
+    var vogais = "aeiouAEIOU"
     for (char in texto) {
         if (vogais.contains(char)) {
             contador++
