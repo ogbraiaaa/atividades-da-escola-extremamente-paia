@@ -4,7 +4,7 @@ fun isTriangular(numero: Int): Boolean {
     }
     var n = 1
     while (true) {
-        val triangular = n * (n + 1) * (n + 2)
+        var triangular = n * (n + 1) * (n + 2)
         if (triangular == numero) {
             return true
         }
@@ -16,7 +16,7 @@ fun isTriangular(numero: Int): Boolean {
 }
 
 fun main() {
-    val numero = readlnOrNull()?.toIntOrNull()
+    var numero = readlnOrNull()?.toIntOrNull()
     if (numero != null) {
         if (isTriangular(numero)) {
             println("$numero é um número triangular.")
