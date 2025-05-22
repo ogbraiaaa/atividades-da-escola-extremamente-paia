@@ -1,7 +1,7 @@
 fun main() {
     println("Digite a quantidade de números:")
-    val n = readlnOrNull()?.toIntOrNull() ?: 0
-    val numeros = IntArray(n)
+    var n = readlnOrNull()?.toIntOrNull() ?: 0
+    var numeros = IntArray(n)
 
     println("Digite os $n números:")
     for (i in 0 until n) {
