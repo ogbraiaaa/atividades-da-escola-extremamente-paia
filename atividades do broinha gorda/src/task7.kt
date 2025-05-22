@@ -1,8 +1,8 @@
 fun main() {
-    val junho = IntArray(30)
+    var junho = IntArray(30) { 0 }
     println("Digite o índice pluviométrico de cada dia de junho:")
     for (i in 0 until 30) {
-        val leitura = readlnOrNull()?.toIntOrNull()
+        var leitura = readlnOrNull()?.toIntOrNull()
         junho[i] = leitura ?: 0
     }
 
@@ -37,8 +37,8 @@ fun main() {
         }
     }
 
-    val mediaPrimeiraQuinzena = somaPrimeiraQuinzena.toDouble() / 15
-    val mediaSegundaQuinzena = somaSegundaQuinzena.toDouble() / 15
+    var mediaPrimeiraQuinzena = (somaPrimeiraQuinzena.toDouble() / 15).toInt()
+    var mediaSegundaQuinzena = (somaSegundaQuinzena.toDouble() / 15).toInt()
 
     println("Dia com mais chuva: $diaMax ($maxChuva)")
     println("Dia com menos chuva: $diaMin ($minChuva)")
